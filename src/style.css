@@ -1,1 +1,49 @@
 @import "tailwindcss";
+
+@theme {
+    /* Color Palette */
+    --color-bg: #F9F2E9;
+    --color-bg-surface: #FFFAF3;
+    --color-bg-secondary: #1E1E1E;
+    --color-text: #1E1E1E;
+    --color-text-secondary: #F9F2E9;
+    --color-border: #1E1E1E;
+    --color-icon: #1E1E1E;
+    --color-icon-secondary: #F9F2E9;
+
+    /* Button Colors */
+    --color-button-primary: #F0B420;
+    --color-button-secondary: #B0A5F4;
+    --color-button-tertiary: #F36C5A;
+
+    /* Neutrals */
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-neutral-100: #F5F5F5;
+    --color-neutral-600: #525252;
+
+    /* Typography */
+    --font-body: "Outfit", sans-serif;
+
+    /* Shadows */
+    --shadow-bold: 6px 6px 0 var(--color-border);
+    --shadow-bold-sm: 4px 4px 0 var(--color-border);
+}
+
+@layer base {
+    html {
+        font-family: var(--font-body);
+        background-color: var(--color-bg);
+        color: var(--color-text);
+    }
+}
+
+@layer utilities {
+    .shadow-bold {
+        box-shadow: var(--shadow-bold);
+    }
+
+    .shadow-bold-sm {
+        box-shadow: var(--shadow-bold-sm);
+    }
+}
