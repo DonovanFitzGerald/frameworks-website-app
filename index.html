@@ -1,14 +1,2030 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./src/style.css" />
-		<title>frameworks-website-app</title>
-	</head>
-	<body>
-		<div id="app">
-			<h1>Hello World!</h1>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>CareConnect - Dementia Help App</title>
+    <meta
+      name="description"
+      content="Compassionate support for every stage of Dementia. Daily routines, memory games, emotional support, and caregiver tools."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-bg text-text">
+    <!-- Header -->
+    <header class="bg-bg border-border border-b-4">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo and Brand -->
+          <a href="/" class="group flex items-center gap-3 text-xl font-bold">
+            <div
+              class="bg-button-primary shadow-bold-sm border-border group-hover:shadow-bold-xs flex h-10 w-10 items-center justify-center rounded-full border-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12 18V5"
+                  stroke="#1E1E1E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15 13C14.1348 12.7471 13.3748 12.2206 12.834 11.4995C12.2932 10.7784 12.0005 9.90141 12 9C11.9995 9.90141 11.7068 10.7784 11.166 11.4995C10.6252 12.2206 9.8652 12.7471 9 13"
+                  stroke="#1E1E1E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.598 6.50001C17.8281 6.1015 17.9635 5.65539 17.9936 5.1962C18.0237 4.73702 17.9478 4.27705 17.7717 3.8519C17.5956 3.42675 17.324 3.04781 16.9781 2.74439C16.6321 2.44097 16.221 2.22121 15.7765 2.1021C15.332 1.983 14.866 1.96775 14.4147 2.05753C13.9634 2.14731 13.5387 2.33971 13.1737 2.61986C12.8086 2.9 12.5129 3.26037 12.3093 3.6731C12.1058 4.08582 12 4.53984 12 5.00001C12 4.53984 11.8942 4.08582 11.6907 3.6731C11.4871 3.26037 11.1914 2.9 10.8263 2.61986C10.4613 2.33971 10.0366 2.14731 9.5853 2.05753C9.13396 1.96775 8.66803 1.983 8.22353 2.1021C7.77904 2.22121 7.3679 2.44097 7.02193 2.74439C6.67596 3.04781 6.40442 3.42675 6.22833 3.8519C6.05224 4.27705 5.97632 4.73702 6.00643 5.1962C6.03655 5.65539 6.17189 6.1015 6.402 6.50001"
+                  stroke="#1E1E1E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.9969 5.125C18.5847 5.27614 19.1304 5.55905 19.5927 5.95231C20.055 6.34557 20.4217 6.83887 20.6651 7.39485C20.9085 7.95082 21.0222 8.55489 20.9976 9.16131C20.9729 9.76773 20.8106 10.3606 20.5229 10.895"
+                  stroke="#1E1E1E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18 18C18.8805 18 19.7364 17.7094 20.4349 17.1734C21.1335 16.6373 21.6356 15.8858 21.8635 15.0353C22.0914 14.1848 22.0323 13.2829 21.6954 12.4694C21.3585 11.6559 20.7625 10.9763 20 10.536"
+                  stroke="#1E1E1E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M19.967 17.483C20.0371 18.0252 19.9953 18.5761 19.8441 19.1015C19.693 19.627 19.4357 20.1158 19.0882 20.538C18.7407 20.9601 18.3104 21.3065 17.8238 21.5558C17.3372 21.8051 16.8046 21.9519 16.259 21.9873C15.7134 22.0227 15.1664 21.9459 14.6516 21.7616C14.1369 21.5773 13.6654 21.2894 13.2662 20.9158C12.8671 20.5421 12.5488 20.0906 12.331 19.5891C12.1132 19.0876 12.0006 18.5467 12 18C11.9994 18.5467 11.8867 19.0876 11.669 19.5891C11.4512 20.0906 11.1329 20.5421 10.7338 20.9158C10.3346 21.2894 9.86313 21.5773 9.34838 21.7616C8.83364 21.9459 8.28657 22.0227 7.74097 21.9873C7.19537 21.9519 6.66283 21.8051 6.17622 21.5558C5.68961 21.3065 5.25927 20.9601 4.91178 20.538C4.56429 20.1158 4.30703 19.627 4.15589 19.1015C4.00474 18.5761 3.96291 18.0252 4.033 17.483"
+                  stroke="#1E1E1E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.99995 18C5.11944 18 4.26355 17.7094 3.56501 17.1734C2.86647 16.6373 2.36432 15.8858 2.13642 15.0353C1.90853 14.1848 1.96763 13.2829 2.30456 12.4694C2.6415 11.6559 3.23743 10.9763 3.99995 10.536"
+                  stroke="#1E1E1E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.00305 5.125C5.41525 5.27614 4.86955 5.55905 4.40728 5.95231C3.94501 6.34557 3.57829 6.83887 3.3349 7.39485C3.0915 7.95082 2.97781 8.55489 3.00244 9.16131C3.02707 9.76773 3.18937 10.3606 3.47705 10.895"
+                  stroke="#1E1E1E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <span class="text-text text-2xl font-bold" href="#"
+              >CareConnect</span
+            >
+          </a>
+
+          <!-- Navigation Links -->
+          <ul class="hidden items-center gap-8 font-medium lg:flex">
+            <li>
+              <a
+                href="#features"
+                class="hover:text-button-primary transition-colors"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#how-it-works"
+                class="hover:text-button-primary transition-colors"
+                >How it works</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="hover:text-button-primary transition-colors"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="hover:text-button-primary transition-colors"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faqs"
+                class="hover:text-button-primary transition-colors"
+                >FAQs</a
+              >
+            </li>
+          </ul>
+
+          <!-- CTA Button -->
+          <a
+            href="#get-started"
+            class="border-border shadow-bold hover:shadow-bold-sm rounded-full border-4 bg-white px-6 py-2.5 font-semibold transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+          >
+            Get Started
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-bg py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col items-center gap-16 lg:flex-row">
+          <!-- Left - Image with Badge -->
+          <div class="relative flex-1">
+            <div class="relative">
+              <img
+                src="/images/stock_grandpa.png"
+                alt="Elderly man smiling"
+                class="h-auto max-h-105 w-full rounded-2xl object-cover"
+              />
+              <!-- Most Loved Badge -->
+              <div class="absolute -bottom-6 -left-4 rotate-10 transform">
+                <div
+                  class="bg-button-tertiary shadow-bold flex flex-col items-center border-4 border-black px-4 py-2"
+                >
+                  <div class="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
+                      fill="#1E1E1E"
+                      stroke="#1E1E1E"
+                      stroke-width="1"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    <span class="text-xl font-bold text-black">4.9 / 5</span>
+                  </div>
+                  <p class="text-text text-sm">App Store Rating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right - Content -->
+          <div class="max-w-xl flex-1">
+            <h1
+              class="mb-6 text-4xl leading-tight font-bold md:text-5xl lg:text-6xl"
+            >
+              The App Your
+              <span class="relative inline-block">
+                Loved One
+                <svg
+                  class="absolute -bottom-2 left-0 w-full"
+                  height="12"
+                  viewBox="0 0 200 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 8C50 2 150 2 198 8"
+                    stroke="#F0B420"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              Deserves
+            </h1>
+            <p class="mb-8 text-2xl font-semibold md:text-3xl">
+              <span class="text-text">simple, </span>
+              <span class="text-text">secure, </span>
+              <span class="text-text">set up in minutes.</span>
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#get-started"
+                class="border-border bg-button-primary shadow-bold hover:shadow-bold-sm rounded-full border-4 px-8 py-3 font-semibold transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+              >
+                Get Started
+              </a>
+              <a
+                href="#learn-more"
+                class="border-border shadow-bold hover:shadow-bold-sm rounded-full border-4 bg-white px-8 py-3 font-semibold transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Built for Families Section -->
+    <section class="bg-bg py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col gap-12 lg:flex-row lg:gap-16">
+          <!-- Left Content -->
+          <div
+            class="flex-1 py-8 lg:sticky lg:top-32 lg:w-1/3 lg:flex-none lg:self-start"
+          >
+            <h2
+              class="mb-6 max-w-sm text-4xl leading-tight font-bold md:text-5xl lg:text-6xl"
+            >
+              Built for families who care
+            </h2>
+            <p
+              class="text-text-muted text-xl leading-relaxed md:text-2xl lg:text-3xl"
+            >
+              You do the hard work. We built an app that supports you. From
+              shared schedules to safety features, it's everything carers need
+              in one simple place.
+            </p>
+          </div>
+
+          <!-- Right - Feature Cards Grid -->
+          <div class="lg:w-2/3">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+              <!-- Card 1: Shared Scheduling -->
+              <div
+                class="bg-bg-surface border-border shadow-bold hover:shadow-bold-sm flex flex-col overflow-hidden rounded-2xl border-4 transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+              >
+                <div
+                  class="bg-button-primary border-border flex h-80 items-center justify-center border-b-4 p-8"
+                >
+                  <img
+                    src="/images/demo_reminders.png"
+                    alt="Scheduling Interface"
+                    class="h-full w-auto rounded-lg object-contain shadow-lg drop-shadow-md"
+                  />
+                </div>
+                <div class="p-8">
+                  <h3 class="mb-3 text-2xl font-bold">Shared Scheduling</h3>
+                  <p class="text-lg leading-relaxed text-black">
+                    Keep family and carers aligned with one shared space for
+                    routines and notes.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 2: Safety Features -->
+              <div
+                class="bg-bg-surface border-border shadow-bold hover:shadow-bold-sm flex flex-col overflow-hidden rounded-2xl border-4 transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+              >
+                <div
+                  class="bg-button-secondary border-border flex h-80 items-center justify-center border-b-4 p-8"
+                >
+                  <img
+                    src="/images/demo_map.png"
+                    alt="GPS Tracking Interface"
+                    class="h-full w-auto rounded-lg object-contain shadow-lg drop-shadow-md"
+                  />
+                </div>
+                <div class="p-8">
+                  <h3 class="mb-3 text-2xl font-bold">Location Tracking</h3>
+                  <p class="text-lg leading-relaxed text-black">
+                    GPS tracking and wandering alerts give you peace of mind
+                    when you can't be there.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3: Care Coordination -->
+              <div
+                class="bg-bg-surface border-border shadow-bold hover:shadow-bold-sm flex flex-col overflow-hidden rounded-2xl border-4 transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+              >
+                <div
+                  class="bg-button-tertiary border-border flex h-80 items-center justify-center border-b-4 p-8"
+                >
+                  <img
+                    src="/images/demo_chat.png"
+                    alt="Chat Interface"
+                    class="h-full w-auto rounded-lg object-contain shadow-lg drop-shadow-md"
+                  />
+                </div>
+                <div class="p-8">
+                  <h3 class="mb-3 text-2xl font-bold">Care Coordination</h3>
+                  <p class="text-lg leading-relaxed text-black">
+                    Coordinate care effortlessly with secure messaging and group
+                    updates.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 4: Personalized Activities -->
+              <div
+                class="bg-bg-surface border-border shadow-bold hover:shadow-bold-sm flex flex-col overflow-hidden rounded-2xl border-4 transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+              >
+                <div
+                  class="bg-button-primary border-border flex h-80 items-center justify-center border-b-4 p-8"
+                >
+                  <img
+                    src="/images/demo_safety_button.png"
+                    alt="Emergency Button Interface"
+                    class="h-full w-auto rounded-lg object-contain shadow-lg drop-shadow-md"
+                  />
+                </div>
+                <div class="p-8">
+                  <h3 class="mb-3 text-2xl font-bold">Instant Assistance</h3>
+                  <p class="text-lg leading-relaxed text-black">
+                    A simple help button allows your loved one to request
+                    assistance immediately.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-bg pb-16">
+      <div class="container mx-auto px-6">
+        <div
+          class="bg-bg-surface border-border shadow-bold flex flex-wrap items-center justify-center gap-8 rounded-2xl border-[3px] px-4 py-8 md:justify-around md:px-8 md:py-12"
+        >
+          <!-- Stat 1 -->
+          <div
+            class="flex min-w-70 flex-1 flex-col items-center justify-center text-center"
+          >
+            <p
+              class="text-text text-5xl font-bold whitespace-nowrap md:text-7xl"
+            >
+              50,000+
+            </p>
+            <p
+              class="text-text text-xl font-semibold whitespace-nowrap md:text-2xl"
+            >
+              Active Carers
+            </p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div
+            class="flex min-w-70 flex-1 flex-col items-center justify-center text-center"
+          >
+            <p
+              class="text-text text-5xl font-bold whitespace-nowrap md:text-7xl"
+            >
+              4.9 / 5
+            </p>
+            <p
+              class="text-text text-xl font-semibold whitespace-nowrap md:text-2xl"
+            >
+              App Store Rating
+            </p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div
+            class="flex min-w-70 flex-1 flex-col items-center justify-center text-center"
+          >
+            <p
+              class="text-text text-5xl font-bold whitespace-nowrap md:text-7xl"
+            >
+              99.9%
+            </p>
+            <p
+              class="text-text text-xl font-semibold whitespace-nowrap md:text-2xl"
+            >
+              Uptime Reliability
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="bg-bg py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <div class="mb-12 text-center">
+          <h2 class="mb-4 text-3xl font-bold md:text-4xl">How It Works</h2>
+          <p class="text-text-muted mx-auto max-w-2xl text-lg">
+            Get started with CareConnect in just a few simple steps
+          </p>
+        </div>
+
+        <!-- Stacked Cards Container -->
+        <div class="relative mx-auto max-w-4xl">
+          <!-- Card 1: Download -->
+          <div class="sticky top-24 z-10">
+            <div
+              class="bg-bg-surface border-button-primary flex -rotate-2 transform flex-col items-center gap-8 rounded-3xl border-4 p-8 shadow-[6px_6px_0px_0px_#F0B420] transition-transform duration-300 hover:rotate-0 md:flex-row md:p-12"
+            >
+              <div class="relative shrink-0">
+                <div
+                  class="bg-button-primary shadow-bold flex h-40 w-40 items-center justify-center rounded-full border-4 border-black md:h-48 md:w-48"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7,10 12,15 17,10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                </div>
+                <div
+                  class="shadow-bold-sm absolute -top-4 -right-4 flex h-16 w-16 items-center justify-center rounded-full border-4 border-black bg-black"
+                >
+                  <span class="text-2xl font-bold text-white">1</span>
+                </div>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="mb-3 text-2xl font-bold md:text-3xl">
+                  Download the App
+                </h3>
+                <p class="text-text-muted text-lg">
+                  Get CareConnect from the App Store or Google Play. It's free
+                  to download and takes less than a minute to install on your
+                  device.
+                </p>
+                <div
+                  class="mt-6 flex flex-wrap justify-center gap-4 md:justify-start"
+                >
+                  <a
+                    href="#"
+                    class="bg-button-primary text-text shadow-bold hover:shadow-bold-sm border-text flex items-center gap-3 rounded-2xl border-4 px-4 py-2 transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+                  >
+                    <div class="flex flex-col items-start px-2 leading-none">
+                      <span class="text-xs font-medium">Download for</span>
+                      <span class="text-lg font-bold">Apple IOS</span>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-button-tertiary text-text shadow-bold hover:shadow-bold-sm border-text flex items-center gap-3 rounded-2xl border-4 px-4 py-2 transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+                  >
+                    <div class="flex flex-col items-start px-2 leading-none">
+                      <span class="text-xs font-medium">Download for</span>
+                      <span class="text-lg font-bold">Android</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Create Profile -->
+          <div class="sticky top-32 z-20 mt-8">
+            <div
+              class="bg-bg-surface border-button-secondary flex rotate-1 transform flex-col items-center gap-8 rounded-3xl border-4 p-8 shadow-[6px_6px_0px_0px_#B0A5F4] transition-transform duration-300 hover:rotate-0 md:flex-row md:p-12"
+            >
+              <div class="relative shrink-0">
+                <div
+                  class="bg-button-secondary shadow-bold flex h-40 w-40 items-center justify-center rounded-full border-4 border-black md:h-48 md:w-48"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </div>
+                <div
+                  class="shadow-bold-sm absolute -top-4 -right-4 flex h-16 w-16 items-center justify-center rounded-full border-4 border-black bg-black"
+                >
+                  <span class="text-2xl font-bold text-white">2</span>
+                </div>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="mb-3 text-2xl font-bold md:text-3xl">
+                  Create a Care Profile
+                </h3>
+                <p class="text-text-muted text-lg">
+                  Set up a profile for your loved one with their preferences,
+                  routines, and important medical information all in one secure
+                  place.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Invite Family -->
+          <div class="sticky top-40 z-30 mt-8">
+            <div
+              class="bg-bg-surface border-button-tertiary flex rotate-[-1.5deg] transform flex-col items-center gap-8 rounded-3xl border-4 p-8 shadow-[6px_6px_0px_0px_#F36C5A] transition-transform duration-300 hover:rotate-0 md:flex-row md:p-12"
+            >
+              <div class="relative shrink-0">
+                <div
+                  class="bg-button-tertiary shadow-bold flex h-40 w-40 items-center justify-center rounded-full border-4 border-black md:h-48 md:w-48"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </div>
+                <div
+                  class="shadow-bold-sm absolute -top-4 -right-4 flex h-16 w-16 items-center justify-center rounded-full border-4 border-black bg-black"
+                >
+                  <span class="text-2xl font-bold text-white">3</span>
+                </div>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="mb-3 text-2xl font-bold md:text-3xl">
+                  Invite Family Members
+                </h3>
+                <p class="text-text-muted text-lg">
+                  Share access with family members and caregivers so everyone
+                  stays informed and connected throughout the care journey.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Start Caring -->
+          <div class="sticky top-48 z-40 mt-8">
+            <div
+              class="bg-bg-surface border-button-primary flex rotate-2 transform flex-col items-center gap-8 rounded-3xl border-4 p-8 shadow-[6px_6px_0px_0px_#F0B420] transition-transform duration-300 hover:rotate-0 md:flex-row md:p-12"
+            >
+              <div class="relative shrink-0">
+                <div
+                  class="bg-button-primary shadow-bold flex h-40 w-40 items-center justify-center rounded-full border-4 border-black md:h-48 md:w-48"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="shadow-bold-sm absolute -top-4 -right-4 flex h-16 w-16 items-center justify-center rounded-full border-4 border-black bg-black"
+                >
+                  <span class="text-2xl font-bold text-white">4</span>
+                </div>
+              </div>
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="mb-3 text-2xl font-bold md:text-3xl">
+                  Start Caring Together
+                </h3>
+                <p class="text-text-muted text-lg">
+                  Use daily routines, memory activities, and safety features to
+                  provide compassionate, coordinated care for your loved one.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Cards Section -->
+    <section
+      id="testimonials"
+      class="bg-bg-secondary rounded-t-[3rem] py-16 md:py-32"
+    >
+      <div
+        class="container mx-auto flex max-w-max flex-col items-start justify-start gap-6 px-6"
+      >
+        <div
+          class="text-text-secondary mx-auto mb-16 flex max-w-4xl flex-col items-center gap-4 justify-self-center text-center"
+        >
+          <div class="flex flex-col items-center justify-center">
+            <h2
+              class="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl"
+            >
+              We've been there.
+            </h2>
+            <h2
+              class="text-4xl leading-tight font-bold md:text-5xl lg:text-6xl"
+            >
+              We understand.
+            </h2>
+          </div>
+          <p class="max-w-2xl text-xl font-medium opacity-90">
+            Built by caregivers, for caregivers. We know the challenges because
+            we've lived them.
+          </p>
+        </div>
+        <div
+          class="container mx-auto flex max-w-max flex-col items-start justify-start px-6 lg:flex-row"
+        >
+          <!-- Card -->
+          <div
+            class="bg-bg-surface border-border flex aspect-4/5 w-full max-w-150 -rotate-3 transform flex-col items-center justify-center rounded-3xl border-4 p-6 transition-transform duration-300 hover:rotate-0"
+          >
+            <h3
+              class="mb-4 inline-block transform text-3xl font-bold md:text-4xl"
+            >
+              For Family
+            </h3>
+            <div class="mb-4 aspect-16/10 w-full overflow-hidden rounded-2xl">
+              <img
+                src="/images/stock_grandpa.png"
+                alt="Family using app together"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <p class="mb-4 text-center text-base font-medium">
+              "Before this, our reminders were scattered across texts and sticky
+              notes. Now Mom's meds, appointments, and 'Who's Who' photos live
+              in one place"
+            </p>
+            <div class="mb-4 text-center">
+              <p class="text-text text-lg font-semibold">Aoife Byrne</p>
+              <p class="text-text font text-base">Daughter & primary carer</p>
+            </div>
+            <a
+              href="#testimonials"
+              class="bg-button-tertiary border-border shadow-bold hover:shadow-bold-sm block rounded-2xl border-[3px] px-4 py-2 text-center text-xl font-bold transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+            >
+              Read Family Stories
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-bg-surface border-border flex aspect-4/5 w-full max-w-150 rotate-2 transform flex-col items-center justify-center rounded-3xl border-4 p-6 transition-transform duration-300 hover:rotate-0"
+          >
+            <h3
+              class="mb-4 inline-block transform text-3xl font-bold md:text-4xl"
+            >
+              For Carers
+            </h3>
+            <div class="mb-4 aspect-16/10 w-full overflow-hidden rounded-2xl">
+              <img
+                src="/images/stock_grandpa.png"
+                alt="Professional carer using app"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <p class="mb-4 text-center text-base font-medium">
+              "It saves me so much time during handovers. The family updates
+              notes before I arrive, and I can see exactly what happened since
+              my last shift."
+            </p>
+            <div class="mb-4 text-center">
+              <p class="text-text text-lg font-semibold">Sarah Walsh</p>
+              <p class="text-text text-base">Professional home carer</p>
+            </div>
+            <a
+              href="#testimonials"
+              class="bg-button-tertiary border-border shadow-bold hover:shadow-bold-sm block rounded-2xl border-[3px] px-4 py-2 text-center text-xl font-bold transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+            >
+              Read Carer Stories
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="bg-bg-secondary pb-16 md:pb-24">
+      <div class="container mx-auto px-6">
+        <div class="relative max-h-100 overflow-hidden">
+          <!-- Masonry Grid -->
+          <div class="columns-1 gap-6 md:columns-2 lg:columns-3">
+            <!-- Review 1 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "The shared calendar is a lifesaver. My siblings and I finally
+                know who is doing what and when. No more double-booking."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-primary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  SJ
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">Sarah J.</p>
+                  <p class="text-text-muted text-xs font-medium">Daughter</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text-muted mb-4 text-base leading-relaxed">
+                "Dad used to call 20 times a day asking 'what time is it?'. The
+                simplified clock mode has stopped the anxiety completely."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-secondary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  MT
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">Michael T.</p>
+                  <p class="text-text-muted text-xs font-medium">Son</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "Being able to see if Mum has taken her meds from work gives me
+                such peace of mind. The notifications are reliable."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-tertiary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  RG
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">Rachel G.</p>
+                  <p class="text-text-muted text-xs font-medium">
+                    Primary Carer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "Simple, intuitive, and actually designed for people who aren't
+                tech-wizards. My aunt can use it without getting frustrated."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-primary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  EW
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">Emma W.</p>
+                  <p class="text-text-muted text-xs font-medium">Niece</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "The GPS safety zone alerts allow Dad to maintain his
+                independence with his morning walks. I get a gentle nudge if he
+                goes too far."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-secondary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  JP
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">James P.</p>
+                  <p class="text-text-muted text-xs font-medium">Son</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 6 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "We tried sharing a paper diary but it got lost. This app keeps
+                everyone updated instantly. The 'Who's Who' feature is
+                brilliant."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-tertiary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  MK
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">Mary K.</p>
+                  <p class="text-text-muted text-xs font-medium">Wife</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 7 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "'Who's Who' helps her remember names without feeling
+                embarrassed. It's such a thoughtful feature."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-primary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  JD
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">John D.</p>
+                  <p class="text-text-muted text-xs font-medium">Husband</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 8 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "Handover notes are seamless now. I know exactly what happened
+                during the day before my shift starts."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-secondary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  LM
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">Lisa M.</p>
+                  <p class="text-text-muted text-xs font-medium">Caregiver</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 9 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "The emergency button gives me peace of mind when I'm at work. I
+                know he can reach me instantly."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-tertiary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  DB
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">David B.</p>
+                  <p class="text-text-muted text-xs font-medium">Son</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 10 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "Customer support helped me set everything up. They were so
+                patient and kind."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-primary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  RH
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">Robert H.</p>
+                  <p class="text-text-muted text-xs font-medium">Husband</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 11 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "The layout is so clear. Even on my old tablet, it works
+                perfectly and I can read everything."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-secondary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  PC
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">Patricia C.</p>
+                  <p class="text-text-muted text-xs font-medium">Wife</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 12 -->
+            <div
+              class="bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6"
+            >
+              <div class="mb-3 flex gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <p class="text-text mb-4 text-base leading-relaxed">
+                "I can easily upload photos for my nan to see. It makes her day
+                when she sees new pictures of us."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-button-tertiary flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold"
+                >
+                  SL
+                </div>
+                <div>
+                  <p class="text-text text-sm font-bold">Sophie L.</p>
+                  <p class="text-text-muted text-xs font-medium">
+                    Granddaughter
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fade Overlay -->
+          <div
+            class="from-bg-secondary absolute bottom-0 left-0 flex h-96 w-full items-end justify-center bg-linear-to-t to-transparent pb-12"
+          >
+            <button
+              class="bg-button-primary text-text shadow-bold hover:shadow-bold-sm active:shadow-bold-xs cursor-pointer rounded-full border-[3px] border-black px-8 py-3 text-lg font-bold transition-all hover:scale-105 active:translate-x-0.5 active:translate-y-0.5"
+            >
+              See More Reviews
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-bg-secondary py-16 md:py-24">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-text-secondary mb-4 text-3xl font-bold md:text-4xl">
+          Caring for someone with dementia?
+        </h2>
+        <p class="text-text-secondary/80 mx-auto mb-8 max-w-2xl text-lg">
+          Join thousands of families who use CareConnect to provide better care
+          and support for their loved ones.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center gap-4">
+          <a
+            href="#"
+            class="bg-button-primary text-text shadow-bold hover:shadow-bold-sm border-text flex items-center gap-3 rounded-2xl border-4 px-4 py-2 transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+          >
+            <div class="flex flex-col items-start leading-none">
+              <span class="text-xs font-medium">Download for</span>
+              <span class="text-lg font-bold">Apple IOS</span>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="bg-button-tertiary text-text shadow-bold hover:shadow-bold-sm border-text flex items-center gap-3 rounded-2xl border-4 px-4 py-2 transition-all hover:translate-x-0.5 hover:translate-y-0.5"
+          >
+            <div class="flex flex-col items-start leading-none">
+              <span class="text-xs font-medium">Download for</span>
+              <span class="text-lg font-bold">Android</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bg border-border border-t-2 py-12">
+      <div class="container mx-auto max-w-6xl px-6">
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-5">
+          <!-- Brand Column -->
+          <div class="col-span-1 lg:col-span-2">
+            <a
+              href="/"
+              class="group mb-4 flex items-center gap-3 text-xl font-bold"
+            >
+              <div
+                class="bg-button-primary shadow-bold-sm border-border group-hover:shadow-bold-xs flex h-10 w-10 items-center justify-center rounded-full border-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12 18V5"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 13C14.1348 12.7471 13.3748 12.2206 12.834 11.4995C12.2932 10.7784 12.0005 9.90141 12 9C11.9995 9.90141 11.7068 10.7784 11.166 11.4995C10.6252 12.2206 9.8652 12.7471 9 13"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.598 6.50001C17.8281 6.1015 17.9635 5.65539 17.9936 5.1962C18.0237 4.73702 17.9478 4.27705 17.7717 3.8519C17.5956 3.42675 17.324 3.04781 16.9781 2.74439C16.6321 2.44097 16.221 2.22121 15.7765 2.1021C15.332 1.983 14.866 1.96775 14.4147 2.05753C13.9634 2.14731 13.5387 2.33971 13.1737 2.61986C12.8086 2.9 12.5129 3.26037 12.3093 3.6731C12.1058 4.08582 12 4.53984 12 5.00001C12 4.53984 11.8942 4.08582 11.6907 3.6731C11.4871 3.26037 11.1914 2.9 10.8263 2.61986C10.4613 2.33971 10.0366 2.14731 9.5853 2.05753C9.13396 1.96775 8.66803 1.983 8.22353 2.1021C7.77904 2.22121 7.3679 2.44097 7.02193 2.74439C6.67596 3.04781 6.40442 3.42675 6.22833 3.8519C6.05224 4.27705 5.97632 4.73702 6.00643 5.1962C6.03655 5.65539 6.17189 6.1015 6.402 6.50001"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.9969 5.125C18.5847 5.27614 19.1304 5.55905 19.5927 5.95231C20.055 6.34557 20.4217 6.83887 20.6651 7.39485C20.9085 7.95082 21.0222 8.55489 20.9976 9.16131C20.9729 9.76773 20.8106 10.3606 20.5229 10.895"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18 18C18.8805 18 19.7364 17.7094 20.4349 17.1734C21.1335 16.6373 21.6356 15.8858 21.8635 15.0353C22.0914 14.1848 22.0323 13.2829 21.6954 12.4694C21.3585 11.6559 20.7625 10.9763 20 10.536"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19.967 17.483C20.0371 18.0252 19.9953 18.5761 19.8441 19.1015C19.693 19.627 19.4357 20.1158 19.0882 20.538C18.7407 20.9601 18.3104 21.3065 17.8238 21.5558C17.3372 21.8051 16.8046 21.9519 16.259 21.9873C15.7134 22.0227 15.1664 21.9459 14.6516 21.7616C14.1369 21.5773 13.6654 21.2894 13.2662 20.9158C12.8671 20.5421 12.5488 20.0906 12.331 19.5891C12.1132 19.0876 12.0006 18.5467 12 18C11.9994 18.5467 11.8867 19.0876 11.669 19.5891C11.4512 20.0906 11.1329 20.5421 10.7338 20.9158C10.3346 21.2894 9.86313 21.5773 9.34838 21.7616C8.83364 21.9459 8.28657 22.0227 7.74097 21.9873C7.19537 21.9519 6.66283 21.8051 6.17622 21.5558C5.68961 21.3065 5.25927 20.9601 4.91178 20.538C4.56429 20.1158 4.30703 19.627 4.15589 19.1015C4.00474 18.5761 3.96291 18.0252 4.033 17.483"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.99995 18C5.11944 18 4.26355 17.7094 3.56501 17.1734C2.86647 16.6373 2.36432 15.8858 2.13642 15.0353C1.90853 14.1848 1.96763 13.2829 2.30456 12.4694C2.6415 11.6559 3.23743 10.9763 3.99995 10.536"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.00305 5.125C5.41525 5.27614 4.86955 5.55905 4.40728 5.95231C3.94501 6.34557 3.57829 6.83887 3.3349 7.39485C3.0915 7.95082 2.97781 8.55489 3.00244 9.16131C3.02707 9.76773 3.18937 10.3606 3.47705 10.895"
+                    stroke="#1E1E1E"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <span class="text-text text-2xl font-bold" href="#"
+                >CareConnect</span
+              >
+            </a>
+            <p class="text-text-muted max-w-xs">
+              Compassionate care, one step at a time. Empowering families and
+              caregivers with the tools they need.
+            </p>
+          </div>
+
+          <!-- Quick Links: Company -->
+          <div>
+            <h4 class="mb-6 text-xl font-bold">Company</h4>
+            <ul class="text-text-muted flex flex-col gap-4 font-medium">
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Press</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links: Resources -->
+          <div>
+            <h4 class="mb-6 text-xl font-bold">Resources</h4>
+            <ul class="text-text-muted flex flex-col gap-4 font-medium">
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Care Guides</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links: Legal -->
+          <div>
+            <h4 class="mb-6 text-xl font-bold">Legal</h4>
+            <ul class="text-text-muted flex flex-col gap-4 font-medium">
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Cookie Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-button-primary transition-colors"
+                  >Accessibility</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Separator -->
+        <hr class="border-border/20 my-12 border-t-2" />
+
+        <!-- Bottom Bar -->
+        <div
+          class="flex flex-col items-center justify-between gap-6 md:flex-row"
+        >
+          <p class="text-text-muted text-sm font-medium">
+            © 2024 CareConnect. All rights reserved.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="flex items-center gap-4">
+            <a
+              href="#"
+              class="bg-bg-surface border-border hover:bg-button-primary flex h-10 w-10 items-center justify-center rounded-full border-4 transition-colors"
+              aria-label="Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="bg-bg-surface border-border hover:bg-button-primary flex h-10 w-10 items-center justify-center rounded-full border-4 transition-colors"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="bg-bg-surface border-border hover:bg-button-primary flex h-10 w-10 items-center justify-center rounded-full border-4 transition-colors"
+              aria-label="Twitter"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
