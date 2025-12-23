@@ -76,6 +76,34 @@
     --shadow-bold-xs: 2px 2px 0 var(--color-border);
 }
 
+.review-card {
+    @apply bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6;
+
+    .star-container {
+        @apply mb-3 flex gap-1 text-button-primary;
+    }
+
+    .quote {
+        @apply text-text mb-4 text-base leading-relaxed;
+    }
+
+    .person-container {
+        @apply flex items-center gap-3;
+
+        .avatar {
+            @apply flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold;
+        }
+
+        .name {
+            @apply text-text text-sm font-bold;
+        }
+
+        .role {
+            @apply text-text-muted text-xs font-medium;
+        }
+    }
+}
+
 @layer base {
     html {
         font-family: var(--font-body);
