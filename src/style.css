@@ -12,10 +12,10 @@
     --color-icon: #1E1E1E;
     --color-icon-secondary: #F9F2E9;
 
-    /* Button Colors */
-    --color-button-primary: #F0B420;
-    --color-button-secondary: #B0A5F4;
-    --color-button-tertiary: #F36C5A;
+    /* Brand Colors */
+    --color-primary: #F0B420;
+    --color-secondary: #B0A5F4;
+    --color-tertiary: #F36C5A;
 
     /* Font */
     --font-body: "Outfit", sans-serif;
@@ -80,7 +80,7 @@
     @apply bg-bg-surface border-border shadow-bold-sm mb-6 break-inside-avoid rounded-2xl border-[3px] p-6;
 
     .star-container {
-        @apply mb-3 flex gap-1 text-button-primary;
+        @apply mb-3 flex gap-1 text-primary;
     }
 
     .quote {
